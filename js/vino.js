@@ -275,7 +275,7 @@ if (typeof vino === 'undefined') {
 
 if (!sessionStorage.getItem("pcCheck")) {
 
-if (vino.pc_getMiiverseControlLevel() === "2") {
+if (vino.pc_getMiiverseControlLevelstopNfcSound() === "2") {
      sessionStorage.setItem("olvPostState", "blocked");
   }
   else {
@@ -530,6 +530,7 @@ if (!sessionStorage.getItem("homeLoaded")) {
     vino.navi_setMoveMethod(0);
     d.body.style.position = "relative";
   }, 4100);
+  sound.playSoundByName("BGM_OLV_BOOT", 1);
 }
 
 if (d.getElementById("settings-mii-body")){
