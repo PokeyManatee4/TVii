@@ -530,7 +530,7 @@ if (!sessionStorage.getItem("homeLoaded")) {
     vino.navi_setMoveMethod(0);
     d.body.style.position = "relative";
   }, 4100);
-  sound.playSoundByName("BGM_OLV_BOOT", 1);
+  vino.soundPlay("BGM_OLV_BOOT", 1);
 }
 
 if (d.getElementById("settings-mii-body")){
